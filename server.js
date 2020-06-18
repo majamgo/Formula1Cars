@@ -46,6 +46,12 @@ app.use(session({
 }));
 
 
+// INDEX  --------------------------------------------------------------------------------------
+app.get('/', async (req, res) => {
+    res.send("Velkommen til serveren!");
+});
+
+
 // AUTH
 app.use('*/admin*', (req, res, next) => {
     console.log(req.session);
