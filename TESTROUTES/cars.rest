@@ -1,0 +1,33 @@
+GET http://localhost:9090/formula1cars
+
+###
+
+GET http://localhost:9090/formula1cars/
+
+###
+
+POST http://localhost:9090/formula1cars/admin
+Content-Type: application/json
+
+{
+    "car": "VF-20",
+    "team": "Haas f1 Team",
+    "year": "2020",
+    "motor": "Ferrari"
+}
+
+###
+
+PATCH http://localhost:9090/formula1cars/admin/
+Content-Type: application/json
+
+{
+    "car": "VF-20",
+    "team": "Haas f1 Team",
+    "year": "2020",
+    "motor": "Ferrari"
+}
+
+###
+
+DELETE http://localhost:9090/formula1cars/admin/
